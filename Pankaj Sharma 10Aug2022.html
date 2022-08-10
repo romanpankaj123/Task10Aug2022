@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pankaj Sharma 10Aug2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+</head>
+<body>
+<div class="container">
+    <h2> Pagination and GRID view</h2>
+    <table class="table tble-fluid" id="myTable">
+    <thead>
+    <tr><th>Country</th><th>Area</th><th>Language</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>India</td><td>12</td><td>Hindi</td></tr>
+    <tr><td>USA</td><td>123</td><td>English</td></tr>
+    <tr><td>UK</td><td>1234</td><td>English</td></tr>
+    <tr><td>Russia</td><td>12345</td><td>Russian</td></tr>
+    <tr><td>Japan</td><td>123456</td><td>Japanese</td></tr>
+    <tr><td>China</td><td>1234567</td><td>Chinese</td></tr>
+    <tr><td>Sri lanka</td><td>12345678</td><td>Srilankan</td></tr>
+    <tr><td>Pakistan</td><td>13456789</td><td>urdu</td></tr>
+    <tr><td>Afghan</td><td>1234567891</td><td>urdu</td></tr>
+    <tr><td>Bangladesh</td><td>12345678912</td><td>bengali</td></tr>
+   
+<tr><td>India</td><td>12</td><td>Hindi</td></tr>
+    <tr><td>USA</td><td>123</td><td>English</td></tr>
+    <tr><td>UK</td><td>1234</td><td>English</td></tr>
+    <tr><td>Russia</td><td>12345</td><td>Russian</td></tr>
+    <tr><td>Japan</td><td>123456</td><td>Japanese</td></tr>
+   
+<tr><td>India</td><td>12</td><td>Hindi</td></tr>
+    <tr><td>USA</td><td>123</td><td>English</td></tr>
+    <tr><td>UK</td><td>1234</td><td>English</td></tr>
+    <tr><td>Russia</td><td>12345</td><td>Russian</td></tr>
+    <tr><td>Japan</td><td>123456</td><td>Japanese</td></tr>
+
+<tr><td>India</td><td>12</td><td>Hindi</td></tr>
+    <tr><td>USA</td><td>123</td><td>English</td></tr>
+    <tr><td>UK</td><td>1234</td><td>English</td></tr>
+    <tr><td>Russia</td><td>12345</td><td>Russian</td></tr>
+    <tr><td>Japan</td><td>123456</td><td>Japanese</td></tr>
+    
+
+    
+    </tbody>
+    </table>
+</div>
+
+<script>
+   $(document).ready( function () {
+  var table = $('#myTable').DataTable( {
+    pageLength : 5,
+    lengthMenu: [[5,10,25], [5,10,25 ]]
+  } )
+} );
+
+
+    </script>
+</body>
+</html>
